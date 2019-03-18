@@ -30,11 +30,11 @@ io.on('connection', () =>{
 
    })
 
-var db = mongoose.connect('mongodb://localhost:27017/simpleChat', function(error){
-    if(error) console.log(error);
-        console.log("connection successful");
-});
-console.log(mongoose.connection.readyState);
+// var db = mongoose.connect('mongodb://localhost:27017/simpleChat', function(error){
+//     if(error) console.log(error);
+//         console.log("connection successful");
+// });
+// console.log(mongoose.connection.readyState);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}))
 
