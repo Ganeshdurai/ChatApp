@@ -43,6 +43,11 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Methods","POST, GET")
     next();
 });
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+    res.setHeader('Access-Control-Allow-Origin', 'https://warm-sea-61375.herokuapp.com/');
+    next();
+  });
 
 
 app.get('/messages',function(req,res){
