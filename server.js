@@ -44,7 +44,7 @@ app.use(function(req, res, next) {
     next();
 });
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.setHeader('Access-Control-Allow-Origin', 'https://warm-sea-61375.herokuapp.com/');
     next();
   });
