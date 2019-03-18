@@ -115,15 +115,26 @@
         function resetEnteredValue() {
             $("#message").val('');
         }
+        
+        // function getMessages() {
+        //     console.log("hi")
+        //     $.get('http://localhost:3000/messages', (data) => {
+        //         data.messages.forEach(addMessages);
+        //     })
+        // }
         function getMessages() {
             console.log("hi")
-            $.get('http://localhost:3000/messages', (data) => {
+            $.get('https://warm-sea-61375.herokuapp.com/messages', (data) => {
                 data.messages.forEach(addMessages);
             })
         }
 
+        // function sendMessage(message) {
+        //     $.post('http://localhost:3000/messages', message)
+
+        // }
         function sendMessage(message) {
-            $.post('http://localhost:3000/messages', message)
+            $.post('https://warm-sea-61375.herokuapp.com/messages', message)
 
         }
     </script>
